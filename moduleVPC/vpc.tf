@@ -1,5 +1,5 @@
 module "this" {
-  source = "git::https://github.com/kanalavinodkumar/aws-vpc.git?ref=v0.0.1"
+  source = "git::https://github.com/kanalavinodkumar/aws-vpc.git?ref=v0.0.2"
   vpc_cidr = var.vpc_cidr
   vpc_tags = var.vpc_tags
   igw_tags = var.igw_tags
@@ -19,5 +19,6 @@ module "this" {
     {
       Name = "private-RT"
     }
-  )
+  ) 
+
 }
