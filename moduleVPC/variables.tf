@@ -38,3 +38,8 @@ variable "private_subnet_name" {
 variable "private_subnet_cidr" {
   default = ["10.10.3.0/24", "10.10.4.0/24"]
 }
+
+variable "security_group_name" {
+  type = string
+  default = "Terraform-SG"
+}
